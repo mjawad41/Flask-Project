@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # OpenCV video capture (use 0 for webcam, or specify the path for a video file)
 video_capture = cv2.VideoCapture('rtsp://admin:admin12345@10.36.216.47:554/h264ESVideoTest')
-
+ 
 def generate_frames():
     while True:
         success, frame = video_capture.read()
